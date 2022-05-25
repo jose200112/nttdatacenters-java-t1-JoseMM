@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"nttdata.java1.game","l":"Ball"},{"p":"nttdata.java1.game","l":"Game"},{"p":"nttdata.java1.game","l":"Score"},{"p":"nttdata.java1","l":"T1MainJoseMM"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"nttdata.javat1.game","l":"Ball"},{"p":"nttdata.javat1.game","l":"Game"},{"p":"nttdata.javat1.game","l":"Score"},{"p":"nttdata.javat1","l":"T1MainJoseMM"}];updateSearchResults();

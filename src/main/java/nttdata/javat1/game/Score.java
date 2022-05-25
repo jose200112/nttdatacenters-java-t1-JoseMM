@@ -1,4 +1,4 @@
-package nttdata.java1.game;
+package nttdata.javat1.game;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -14,7 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Clase Score que registra el jugador y la puntuacion y genera un ranking
+ * Clase Score que registra el jugador, la puntuacion y genera un ranking
  * @author maria
  *
  */

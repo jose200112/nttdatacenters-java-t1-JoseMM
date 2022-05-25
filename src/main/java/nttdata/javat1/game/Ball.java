@@ -1,4 +1,4 @@
-package nttdata.java1.game;
+package nttdata.javat1.game;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

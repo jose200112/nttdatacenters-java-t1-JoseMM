@@ -1,12 +1,11 @@
-package nttdata.java1;
-
-import nttdata.java1.game.Score;
+package nttdata.javat1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import nttdata.java1.game.Ball;
-import nttdata.java1.game.Game;
+import nttdata.javat1.game.Ball;
+import nttdata.javat1.game.Game;
+import nttdata.javat1.game.Score;
 
 /**
  * Clase con metodo main
