@@ -29,6 +29,7 @@ public class Score {
 	private List<String> al = new ArrayList<String>();
 	private String playerName;
 	private int score;
+	
 
 	/**
 	 * Metodo que pide un nombre al jugador y lo registra
@@ -38,14 +39,19 @@ public class Score {
 		do {
 			System.out.println("Dime tu nombre");
 			playerName = sc.nextLine();
+			
 			if (playerName.isEmpty() | playerName.isBlank()) {
 				LOG.error("No se puede dejar el nombre vacio, vuelve a intentarlo");
+			} else {
+				LOG.info("Jugador registrado correctamente");
 			}
+			
 		} while (playerName.isEmpty() | playerName.isBlank());
 		// Registramos el jugador y la puntuacion
 		scoreFile();
 	}
 
+	
 	/**
 	 * Metodo que guarda los jugadores y su puntuacion en un archivo
 	 */
@@ -67,6 +73,7 @@ public class Score {
 		}
 	}
 
+	
 	/**
 	 * Metodo que lee el archivo score y hace un ranking de jugadores
 	 */
@@ -92,6 +99,7 @@ public class Score {
 			}
 		}
 	}
+	
 
 	/**
 	 * Metodo que ordena los jugadores por puntuacion
@@ -126,6 +134,7 @@ public class Score {
 		}
 	}
 
+	
 	/**
 	 * Metodo getter de la puntuacion
 	 * 
@@ -135,6 +144,7 @@ public class Score {
 		return score;
 	}
 
+	
 	/**
 	 * Metodo que incrementa la puntuacion
 	 */
