@@ -1,80 +1,37 @@
 package nttdata.javat1.game;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
- * Clase Ball que realiza los movimientos de la trayectoria
- * 
+ * Interface Ball que realiza los movimientos de la trayectoria
  * @author jose
  *
  */
-public class Ball {
-	private int ballRY;
-	private int ballRX;
-	private static final Logger LOG = LoggerFactory.getLogger(Ball.class);
+public interface Ball {
+
 
 	/**
 	 * Metodo que simula el ascenso y descenso de la bola
-	 * @param launchY
-	 * @param launchX
+	 * @param launchY (Eje Y)
+	 * @param launchX (Eje X)
 	 */
-	public void ballMovement(int launchY, int launchX) {
-
-		// Ascenso de la pelota
-		while (ballRY < launchY || ballRX < launchX) {
-
-			if (ballRY < launchY) {
-				ballRY++;
-			}
-
-			if (ballRX < launchX) {
-				ballRX++;
-			}
-
-			if (ballRX > launchX) {
-				ballRX--;
-			}
-
-			LOG.info("Movimiento ascendente, X:{} Y:{}", getBallRX(), getBallRY());
-		}
-
-		// Descenso de la pelota
-		while (ballRY > 0 || ballRX > 0) {
-
-			if (ballRY > 0) {
-				ballRY--;
-			}
-
-			if (ballRX > 0) {
-				ballRX--;
-			}
-
-			if (ballRX < 0) {
-				ballRX++;
-			}
-
-			LOG.info("Movimiento descendente, X:{} Y:{}", getBallRX(), getBallRY());
-		}
-
-	}
-
+	public void ballMovement(int launchY, int launchX);
+	
+	/**
+	 * Metodo que da puntuacion al jugador si rebota la pelota
+	 */
+	public void bounce();
+	
 	/**
 	 * Metodo getter de la posicion Y de la bola
 	 * 
 	 * @return ballRY
 	 */
-	public int getBallRY() {
-		return ballRY;
-	}
+	public int getBallRY();
 
 	/**
 	 * Metodo getter de la posicion x de la bola
 	 * 
 	 * @return ballRX
 	 */
-	public int getBallRX() {
-		return ballRX;
-	}
+	public int getBallRX();
 
 }
