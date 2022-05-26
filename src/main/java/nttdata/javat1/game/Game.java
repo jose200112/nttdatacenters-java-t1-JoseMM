@@ -149,50 +149,7 @@ public class Game extends Score implements Ball {
 		System.out.println("-- Game Over --");
 	}
 
-	/**
-	 * Metodo getter del lanzamiento X
-	 * 
-	 * @return launchX
-	 */
-	public int getLaunchX() {
-		return launchX;
-	}
 
-	/**
-	 * Metodo getter del lanzamiento Y
-	 * 
-	 * @return lunchY
-	 */
-	public int getLaunchY() {
-		return launchY;
-	}
-
-	/**
-	 * Metodo getter del limite de altura
-	 * 
-	 * @return heigh 
-	 */
-	public int getHeigh() {
-		return heigh;
-	}
-
-	/**
-	 * Metodo getter del limite de anchura izquierda
-	 * 
-	 * @return widthL
-	 */
-	public int getWidthL() {
-		return widthL;
-	}
-
-	/**
-	 * Metodo getter del limite de anchura derecha
-	 * 
-	 * @return widthR
-	 */
-	public int getWidthR() {
-		return widthR;
-	}
 
 	/**
 	 * Metodo que hace mover la pelota
@@ -253,6 +210,51 @@ public class Game extends Score implements Ball {
 	public int getBallRX() {
 		// TODO Auto-generated method stub
 		return ballRX;
+	}
+	
+	/**
+	 * Metodo getter del lanzamiento X
+	 * 
+	 * @return launchX
+	 */
+	public int getLaunchX() {
+		return launchX;
+	}
+
+	/**
+	 * Metodo getter del lanzamiento Y
+	 * 
+	 * @return lunchY
+	 */
+	public int getLaunchY() {
+		return launchY;
+	}
+
+	/**
+	 * Metodo getter del limite de altura
+	 * 
+	 * @return heigh 
+	 */
+	public int getHeigh() {
+		return heigh;
+	}
+
+	/**
+	 * Metodo getter del limite de anchura izquierda
+	 * 
+	 * @return widthL
+	 */
+	public int getWidthL() {
+		return widthL;
+	}
+
+	/**
+	 * Metodo getter del limite de anchura derecha
+	 * 
+	 * @return widthR
+	 */
+	public int getWidthR() {
+		return widthR;
 	}
 
 }

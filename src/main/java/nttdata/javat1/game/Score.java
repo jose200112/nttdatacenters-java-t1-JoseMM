@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
  * @author maria
  *
  */
-public abstract class Score {
+public class Score {
 
 	Scanner sc = new Scanner(System.in);
 	private static final Logger LOG = LoggerFactory.getLogger(Score.class);
